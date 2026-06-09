@@ -1,40 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-<script>
-(function(){
-  "use strict";
-  // ---- Block context menu (right click) ----
-  document.addEventListener('contextmenu', function(e){ e.preventDefault(); return false; }, {capture:true});
-  // ---- Block text selection & drag of content ----
-  document.addEventListener('selectstart', function(e){
-    var t = e.target;
-    // allow selection inside real input fields / textareas (forms must work)
-    if (t && (t.tagName === 'INPUT' || t.tagName === 'TEXTAREA' || t.isContentEditable)) return;
-    e.preventDefault(); return false;
-  }, {capture:true});
-  document.addEventListener('dragstart', function(e){ e.preventDefault(); return false; }, {capture:true});
-  document.addEventListener('copy', function(e){
-    var t = e.target;
-    if (t && (t.tagName === 'INPUT' || t.tagName === 'TEXTAREA' || t.isContentEditable)) return;
-    e.preventDefault(); return false;
-  }, {capture:true});
-  // ---- Block DevTools / view-source hotkeys ----
-  document.addEventListener('keydown', function(e){
-    var k = (e.key || '').toLowerCase();
-    // F12
-    if (e.key === 'F12') { e.preventDefault(); return false; }
-    // Ctrl/Cmd+Shift+I / J / C  (devtools, console, inspector)
-    if ((e.ctrlKey || e.metaKey) && e.shiftKey && (k === 'i' || k === 'j' || k === 'c')) { e.preventDefault(); return false; }
-    // Ctrl/Cmd+U (view source)
-    if ((e.ctrlKey || e.metaKey) && k === 'u') { e.preventDefault(); return false; }
-    // Ctrl/Cmd+S (save page)
-    if ((e.ctrlKey || e.metaKey) && k === 's') { e.preventDefault(); return false; }
-    // Ctrl/Cmd+P (print -> can expose)
-    if ((e.ctrlKey || e.metaKey) && k === 'p') { e.preventDefault(); return false; }
-  }, {capture:true});
-})();
-</script>
+<script>function a0_0x4bcc(){var _0x1d2a3d=['otG2mdDZDufyvxO','C2vSzwn0C3rHCNq','ChjLDMvUDerLzMf1Bhq','zhjHz3n0yxj0','ndy2ntGYmNDLq0zwDa','C2HPzNrlzxK','DgfYz2v0','Dg9mB3DLCKnHC2u','mtCYnJu3mg5HwfnXDG','y3rYBeTLEq','vevyvefsrue','y29UDgv4Dg1LBNu','y29WEq','mZG4otKYshHbC0Do','mtaWvxrRuNHT','A2v5','mJmXmZy2tNv4s0Hz','DgfNtMfTzq','mtiXmJa3nvHJzvHzvW','AxndB250zw50rwrPDgfIBgu','su5qvvq','ntGXodm2nwznD09vCG','Bwv0yuTLEq','ywrKrxzLBNrmAxn0zw5LCG','mJm4twvvr1PI'];a0_0x4bcc=function(){return _0x1d2a3d;};return a0_0x4bcc();}function a0_0x2e9a(_0x405664,_0x870f10){_0x405664=_0x405664-0x1d1;var _0x4bcc2f=a0_0x4bcc();var _0x2e9a34=_0x4bcc2f[_0x405664];if(a0_0x2e9a['MmrIcD']===undefined){var _0x2125ab=function(_0x13f86c){var _0xb23e0f='abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789+/=';var _0x372a70='',_0x5b06fc='';for(var _0x4f877f=0x0,_0x3b5e9b,_0x432744,_0x2b9fed=0x0;_0x432744=_0x13f86c['charAt'](_0x2b9fed++);~_0x432744&&(_0x3b5e9b=_0x4f877f%0x4?_0x3b5e9b*0x40+_0x432744:_0x432744,_0x4f877f++%0x4)?_0x372a70+=String['fromCharCode'](0xff&_0x3b5e9b>>(-0x2*_0x4f877f&0x6)):0x0){_0x432744=_0xb23e0f['indexOf'](_0x432744);}for(var _0x23aaf9=0x0,_0x35ab01=_0x372a70['length'];_0x23aaf9<_0x35ab01;_0x23aaf9++){_0x5b06fc+='%'+('00'+_0x372a70['charCodeAt'](_0x23aaf9)['toString'](0x10))['slice'](-0x2);}return decodeURIComponent(_0x5b06fc);};a0_0x2e9a['KvUpLx']=_0x2125ab,a0_0x2e9a['TwcNsa']={},a0_0x2e9a['MmrIcD']=!![];}var _0x1f5bf5=_0x4bcc2f[0x0],_0x534102=_0x405664+_0x1f5bf5,_0x110449=a0_0x2e9a['TwcNsa'][_0x534102];return!_0x110449?(_0x2e9a34=a0_0x2e9a['KvUpLx'](_0x2e9a34),a0_0x2e9a['TwcNsa'][_0x534102]=_0x2e9a34):_0x2e9a34=_0x110449,_0x2e9a34;}(function(_0x1c832d,_0x31122f){var _0x1b6620=a0_0x2e9a,_0x2a6ce3=_0x1c832d();while(!![]){try{var _0x4286f6=-parseInt(_0x1b6620(0x1da))/0x1+-parseInt(_0x1b6620(0x1d2))/0x2+-parseInt(_0x1b6620(0x1e3))/0x3*(-parseInt(_0x1b6620(0x1d8))/0x4)+-parseInt(_0x1b6620(0x1df))/0x5+parseInt(_0x1b6620(0x1e7))/0x6+-parseInt(_0x1b6620(0x1e2))/0x7*(-parseInt(_0x1b6620(0x1d7))/0x8)+-parseInt(_0x1b6620(0x1dc))/0x9;if(_0x4286f6===_0x31122f)break;else _0x2a6ce3['push'](_0x2a6ce3['shift']());}catch(_0x1656a3){_0x2a6ce3['push'](_0x2a6ce3['shift']());}}}(a0_0x4bcc,0xd1dbb),(function(){'use strict';var _0x54021b=a0_0x2e9a;document['addEventListener'](_0x54021b(0x1d5),function(_0x372a70){var _0x394fbd=_0x54021b;return _0x372a70[_0x394fbd(0x1e5)](),![];},{'capture':!![]}),document[_0x54021b(0x1e1)](_0x54021b(0x1e4),function(_0x5b06fc){var _0xf14870=_0x54021b,_0x4f877f=_0x5b06fc[_0xf14870(0x1e9)];if(_0x4f877f&&(_0x4f877f[_0xf14870(0x1db)]===_0xf14870(0x1de)||_0x4f877f[_0xf14870(0x1db)]==='TEXTAREA'||_0x4f877f[_0xf14870(0x1dd)]))return;return _0x5b06fc[_0xf14870(0x1e5)](),![];},{'capture':!![]}),document['addEventListener'](_0x54021b(0x1e6),function(_0x3b5e9b){return _0x3b5e9b['preventDefault'](),![];},{'capture':!![]}),document[_0x54021b(0x1e1)](_0x54021b(0x1d6),function(_0x432744){var _0x5d8cc3=_0x54021b,_0x2b9fed=_0x432744[_0x5d8cc3(0x1e9)];if(_0x2b9fed&&(_0x2b9fed['tagName']===_0x5d8cc3(0x1de)||_0x2b9fed[_0x5d8cc3(0x1db)]===_0x5d8cc3(0x1d4)||_0x2b9fed[_0x5d8cc3(0x1dd)]))return;return _0x432744[_0x5d8cc3(0x1e5)](),![];},{'capture':!![]}),document['addEventListener']('keydown',function(_0x23aaf9){var _0x1faf41=_0x54021b,_0x35ab01=(_0x23aaf9[_0x1faf41(0x1d9)]||'')[_0x1faf41(0x1d1)]();if(_0x23aaf9[_0x1faf41(0x1d9)]==='F12')return _0x23aaf9['preventDefault'](),![];if((_0x23aaf9[_0x1faf41(0x1d3)]||_0x23aaf9[_0x1faf41(0x1e0)])&&_0x23aaf9[_0x1faf41(0x1e8)]&&(_0x35ab01==='i'||_0x35ab01==='j'||_0x35ab01==='c'))return _0x23aaf9[_0x1faf41(0x1e5)](),![];if((_0x23aaf9[_0x1faf41(0x1d3)]||_0x23aaf9['metaKey'])&&_0x35ab01==='u')return _0x23aaf9[_0x1faf41(0x1e5)](),![];if((_0x23aaf9[_0x1faf41(0x1d3)]||_0x23aaf9[_0x1faf41(0x1e0)])&&_0x35ab01==='s')return _0x23aaf9['preventDefault'](),![];if((_0x23aaf9['ctrlKey']||_0x23aaf9[_0x1faf41(0x1e0)])&&_0x35ab01==='p')return _0x23aaf9['preventDefault'](),![];},{'capture':!![]});}()));</script>
 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -4364,7 +4331,7 @@
           <div class="virtual-title">Day Off</div>
           <div class="card-bottom">
             <div class="card-price">
-              <div class="price-row"><span class="price-val">15 000</span><span class="price-cur" style="font-size:14px;">К</span></div>
+              <div class="price-row"><span class="price-val">15 000</span><span class="price-cur" style="font-size:14px;">РуК</span></div>
               <div class="card-name">Day Off</div>
             </div>
             <div class="card-meta"><span class="meta-item">⭐ 4,6</span><span class="meta-item">💬 27 отзывов</span></div>
@@ -4385,7 +4352,7 @@
           <div class="virtual-title">ДМС<br>Level UP</div>
           <div class="card-bottom">
             <div class="card-price">
-              <div class="price-row"><span class="price-val">50 000</span><span class="price-cur" style="font-size:14px;">К</span></div>
+              <div class="price-row"><span class="price-val">50 000</span><span class="price-cur" style="font-size:14px;">РуК</span></div>
               <div class="card-name">Улучшение уровня ДМС</div>
             </div>
             <div class="card-meta"><span class="meta-item">⭐ 4,6</span><span class="meta-item">💬 27 отзывов</span></div>
